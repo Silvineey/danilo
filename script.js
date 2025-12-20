@@ -23,9 +23,10 @@ function render(){
     const caixa=document.getElementById("saida")
     for(let i=1;i<12;i++){
         const img=document.createElement("img")
-        img.src=`/assets/p${i}.png`
+        img.src=`./assets/p${i}.png`
         caixa.appendChild(img)
 
     }
 }
+
 document.addEventListener("DOMContentLoaded",render)
