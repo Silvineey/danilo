@@ -13,6 +13,7 @@
 }
 
 body{
+    overflow-x: hidden;
     background-color: black;
 }
 header{
@@ -47,20 +48,25 @@ header{
 .titulo h2{
     color: white;
     text-align: center;
-    font-size: 33px;
-
-}
-main{
-    font-family: "FonteDestaque",sans-serif;
+    font-size: 50px;
 }
 h2{
     font-weight: 300;
 }
 .caixa{
+    min-width:1920px;
+    justify-content: center;
     display: flex;
-    font-size: 20px;
-    margin-left: 50px;
-    margin-top: 50px;
-    color: white;
-
+    flex-wrap: wrap;
+    gap: 90px;
+}
+.caixa img{
+    margin-top: 150px;
+    width: 415px;
+    min-height: 600px;
+    transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.caixa img:hover{
+    transform: scale(1.09);
+    cursor: pointer;
 }

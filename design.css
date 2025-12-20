@@ -55,7 +55,7 @@ header{
 }
 .opcoes{
     position: absolute;
-    top: 80%;
+    top: 88%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: flex;
@@ -73,17 +73,17 @@ header{
     text-align: center;
     font-family: "Destaque",sans-serif;
     color: white;
+    margin-bottom: 50px;
 }
 .slide{
     margin: 0 auto;
-    gap: 100px;
-    font-size: 45px;
+    gap: 300px;
+    font-size: 40px;
     font-weight: 300;
     display: flex;
     justify-content: center;
 }
 .opcoes p:hover{
-    transform: scale(1.1);
     cursor: pointer;
 }
 
@@ -115,12 +115,12 @@ header{
 .video{
     border-radius: 10px;
     background-color: grey;
-    height: 500;
-    width: 600px;
+    height: 480px;
+    width: 960px;
 }
 .texto p{
     text-align: left;
-    font-size: 20px;
+    font-size: 19px;
 }
 main{
     background-color: black;
@@ -132,9 +132,6 @@ section{
     margin-top: 50px;
     display: flex;
     justify-content: center;
-}
-h2{
-    margin-top: 200px;
 }
 .apre{
     background-color: grey;
