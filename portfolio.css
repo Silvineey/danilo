@@ -70,3 +70,56 @@ h2{
     transform: scale(1.09);
     cursor: pointer;
 }
+main{
+    position: relative;
+}
+.galeriahidden {
+    display: none;
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    
+    /* Cor de fundo semi-transparente */
+    background-color: rgba(0, 0, 0, 0.7); 
+    
+    /* O EFEITO DE BLUR AQUI */
+    backdrop-filter: blur(10px); 
+    justify-content: center;
+    padding-top: 300px;
+    z-index: 1000;
+}
+
+.galeriahidden.ativa {
+    display: flex;
+}
+.galeriahidden img{
+    height: auto;
+    width: 900px;
+}
+
+.conteiner{
+    position: relative;
+    width: 900px;
+}
+.conteiner img{
+    position: absolute;
+}
+.btn img{
+    margin-top: 150px;
+    width: 100px;
+}
+.btn{
+    cursor: pointer;
+}
+.on{
+    visibility: visible;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+}
+.off{
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
