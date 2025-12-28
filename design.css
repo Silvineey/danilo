@@ -13,6 +13,7 @@ body{
     position: relative;
 }
 header{
+    font-family: "inter",sans-serif;
     left: 0;
     top: 0;
     align-items: center;
