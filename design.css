@@ -113,15 +113,14 @@ header{
 
 }
 
-.video{
-    border-radius: 10px;
-    background-color: grey;
-    height: 480px;
-    width: 960px;
+.video img{
+    width: 650px;
+    height: auto;
+    border-radius: 42px;
 }
 .texto p{
     text-align: left;
-    font-size: 19px;
+    font-size: 22px;
 }
 main{
     background-color: black;
@@ -139,4 +138,31 @@ section{
     width: 250px;
     height: 200px;
     margin-bottom: 100px;
+}
+footer{
+    background-color: #e6dfd5;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    padding: 1.5em;
+}
+footer p{
+    font-size: 25px;
+    text-align: center;
+}
+.logofooter img{
+    width: 150px;
+}
+.iconsfooter{
+    display: flex;
+    gap: 30px;
+}
+.iconsfooter img{
+    width: 33px;
+    transition: transform 0.5s ease;
+}
+.iconsfooter img:hover{
+    cursor: pointer;
+    transform: scale(1.1);
 }
