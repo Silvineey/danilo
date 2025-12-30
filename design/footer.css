@@ -1,0 +1,31 @@
+footer{
+    font-family: "inter",sans-serif;
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    padding: 25px ;
+    background-color: #e6dfd5;
+}
+.contatos{
+    text-align: center;
+}
+.iconsfooter{
+    flex-direction: column;
+    display: flex;
+    gap: 5px;
+}
+.links img{
+    width: 30px;
+    transition: transform 1s ease;
+}
+.links{
+    display: flex;
+    gap: 10px;
+}
+.links img:hover{
+    transform: scale(1.05);
+}
+.dev a{
+    color: black;
+    font-size: 20px;
+}
