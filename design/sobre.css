@@ -1,60 +1,3 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-}
-body{
-    width: 100%;
-}
-.body{
-    height: 100vh;
-    position: relative;
-}
-header{
-    font-family: "inter",sans-serif;
-    display: flex;
-    justify-content: space-between;
-    background-color: black;
-}
-@font-face {
-    font-family: "Destaque";
-    src: url("../fonte/TBJMaltaMiniEdition-ExtLt-BF668d85fa62f0a.ttf") format("truetype");
-    font-weight: normal;
-    font-style: normal;
-}
-
-header{
-    align-items: center;
-    padding: 20px 50px;
-    font-family: "inter",sans-serif;
-    display: flex;
-    justify-content: space-between;
-}
-.navbar{
-    display: flex;
-    gap: 30px;
-}
-.navbar li a{
-    font-size: 20px;
-    color: white;
-    font-weight: 600;
-}
-.navbar li{
-    transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
-}
-.navbar li:hover{
-    transform: scale(1.1);
-}
-.logo img{
-    width: 130px;
-    height: auto;
-}
-.logo{
-    margin-left: 100px;
-    margin-top: 21px;
-}
 main{
     background-color: #2e2e2e;
 }
@@ -115,7 +58,7 @@ main{
     display: flex;
     text-align: center;
     padding: 2.5rem;
-    font-size: 36px;
+    font-size: 22px;
     font-weight: 400;
     justify-content: center;
 }

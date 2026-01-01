@@ -1,0 +1,21 @@
+img{
+    width: 900px;
+    height: auto;
+}
+.caixa{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 45px;
+}
+h2{
+    color: white;
+}
+.conteiner{
+    padding-top: 350px;
+    padding-bottom: 350px;
+}
+.logofooter img{
+    width: 175px;
+    height: auto;
+}
