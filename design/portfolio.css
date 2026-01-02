@@ -27,7 +27,6 @@
 }
 
 .caixapreta{
-    pointer-events: none;
     position: absolute;
     width: 100%;
     height: 100%;
@@ -43,7 +42,7 @@
 }
 .caixabranca:hover .caixapreta{
     opacity: 0.5;
-    pointer-events: all;
+    cursor: pointer;
 }
 .caixabranca{
     text-align: center;
