@@ -8,13 +8,14 @@
     <link rel="stylesheet" href="../design/portfolio.css">
     <link rel="stylesheet" href="../design/header.css">
     <script defer src="../codigos/portfolio.js"></script>
-        <link
+    <link
         href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
         rel="stylesheet">
+        <script defer src="../codigos/header.js"></script>
 </head>
 
 <body>
-    <header>
+    <header class="desktop">
         <div class="logo">
             <a href="https://silvineey.github.io/danilo/"><img src="../assets/LOGO.png" alt=""></a>
         </div>
@@ -27,6 +28,24 @@
             </ul>
         </nav>
     </header>
+    <header class="mobile">
+        <div class="logomobile">
+            <a href="https://silvineey.github.io/danilo/"><img src="../assets/LOGO.png" alt=""></a>
+        </div>
+        <div>
+            <ul>
+                <li>
+                    <img id="menu" src="../assets/Menu.png" alt="">
+                    <ul class="submenu off">
+                        <li><a href="https://silvineey.github.io/danilo/">Início</a></li>
+                        <li><a href="sobre.html">Sobre</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
     <main id="pagina">
         <div class="titulo">
             <h2>Portifólio</h2>
@@ -34,7 +53,7 @@
         </div>
         <section class="principal">
             <div class="caixa">
-                <div  class="caixabranca">
+                <div class="caixabranca">
                     <img src="../assets/p1.png" alt="">
                     <div data-galeria="davi" class="caixapreta">
                         <div>

@@ -14,15 +14,16 @@
     padding-bottom: 100px;
 }
 .caixa{
-    min-width:1920px;
+    max-width:1920px;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
     gap: 90px;
 }
 .caixa img{
-    width: 415px;
-    min-height: 600px;
+    width: 300px;
+    max-width: 415px;
+    max-height: 600px;
     transition: transform 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
@@ -66,4 +67,9 @@ footer img{
 }
 footer img:hover{
     transform: scale(1.05);
+}
+@media screen and (max-width:500px){
+    .caixa{
+        flex-direction: column;
+    }
 }

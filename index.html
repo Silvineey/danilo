@@ -16,9 +16,9 @@
 </head>
 
 <body>
+    <!-- versão desktop -->
     <div class="body">
-
-        <header>
+        <header class="cabeca">
             <div class="logo">
                 <a href="https://silvineey.github.io/danilo/"><img src="assets/LOGO.png" alt=""></a>
             </div>
@@ -134,134 +134,42 @@
         </div>
     </div>
 
-        <div style="display: none;" class="bodymobile">
-
-        <header>
-            <div class="logo">
+    <!-- versão mobile -->
+    <div class="bodymobile">
+        <header class="cabecamobile">
+            <div class="logomobile">
                 <a href="https://silvineey.github.io/danilo/"><img src="assets/LOGO.png" alt=""></a>
             </div>
-            <div>
-                <ul class="navbar">
-                    <li><a href="https://silvineey.github.io/danilo/">Início</a></li>
-                    <li><a href="paginas/sobre.html">Sobre</a></li>
-                    <li><a href="paginas/portfolio.html">Portfolio</a></li>
-                    <li><a href="paginas/contato.html">Contato</a></li>
-                </ul>
-            </div>
+            <ul>
+                <li>
+                    <img id="menu" src="assets/Menu.png" alt="">
+                    <ul class="submenu off">
+                        <li><a href="https://silvineey.github.io/danilo/">Início</a></li>
+                        <li><a href="/paginas/sobre.html">Sobre</a></li>
+                        <li><a href="paginas/portfolio.html">Portfolio</a></li>
+                        <li><a href="#">Contato</a></li>
+                    </ul>
+                </li>
+            </ul>
+
         </header>
-        <!-- Parte principal -->
-        <div data-slide="nath" class="backgroundmain on">
-            <div class="conteiner">
-                <div class="capa">
-
-                </div>
-                <div class="opcoes">
-                    <div>
-                        <img src="assets/NathLuHero.png" alt="">
-                    </div>
-                    <div class="slide">
-                        <p data-slide="camila" style="transform: translateY(45px); opacity: 0.4;">Camila</p>
-                        <p data-slide="casamento" style="transform: translateY(0px); opacity: 0.6;">Casamento</p>
-                        <p style="margin-right: 30px; transform: translateY(-67px);" data-slide="nath">Nath Lu</p>
-                        <p style="transform: translateY(0px); opacity: 0.6;" data-slide="davi">Davi</p>
-                        <p style="transform: translateY(45px); opacity: 0.4;" data-slide="bodas">Bodas</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 2° Parte do davi -->
-        <div data-slide="davi" class="backgroundmain off">
-            <div class="conteiner">
-                <div class="capa">
-
-                </div>
-                <div class="opcoes">
-                    <div>
-                        <img src="assets/DaviHero.png" alt="">
-                    </div>
-                    <div class="slide">
-                        <p data-slide="camila" style="transform: translateY(45px); opacity: 0.4;">Camila</p>
-                        <p data-slide="casamento" style="transform: translateY(0);opacity: 0.6;">Casamento</p>
-                        <p data-slide="davi" style="transform: translate(-12px,-70px);">Davi</p>
-                        <p data-slide="nath" style="transform: translateY(-35px); opacity: 0.6;">Nath<br>Lu</p>
-                        <p data-slide="bodas" style="transform: translateY(45px); opacity: 0.4;">Bodas</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 3° parte do Bodas -->
-        <div data-slide="bodas" class="backgroundmain off">
-            <div class="conteiner">
-                <div class="capa">
-
-                </div>
-                <div class="opcoes">
-                    <div>
-                        <img src="assets/bodashero.png" alt="">
-                    </div>
-                    <div class="slide">
-                        <p data-slide="camila" style="transform: translateY(45px); opacity: 0.4;">Camila</p>
-                        <p data-slide="casamento" style="transform: translateY(0); opacity: 0.6;">Casamento</p>
-                        <p data-slide="bodas" style="transform: translate(-20px,-70px);">Bodas</p>
-                        <p data-slide="davi" style="transform: translateY(0); opacity: 0.6;">Davi</p>
-                        <p data-slide="nath" style="opacity: 0.4;">Nath<br>Lu
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--4° parte do casamento -->
-        <div data-slide="casamento" class="backgroundmain off">
-            <div class="conteiner">
-                <div class="capa">
-
-                </div>
-                <div class="opcoes">
-                    <div>
-                        <img src="assets/casamentohero.png" alt="">
-                    </div>
-                    <div class="slide">
-                        <p style="opacity: 0.4;" data-slide="nath">Nath Lu</p>
-                        <p data-slide="camila" style="transform: translateY(0); opacity: 0.6;">Camila</p>
-                        <p data-slide="casamento" style=" transform: translate(18px,-70px);">Casamento</p>
-                        <p style="transform: translateY(0); opacity: 0.6;" data-slide="davi">Davi</p>
-                        <p style="transform: translateY(45px); opacity: 0.4;" data-slide="bodas">Bodas</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- 5° parte da camila -->
-        <div data-slide="camila" class="backgroundmain off">
-            <div class="conteiner">
-                <div class="capa">
-
-                </div>
-                <div class="opcoes">
-                    <div>
-                        <img src="assets/camilahero.png" alt="">
-                    </div>
-                    <div class="slide">
-                        <p data-slide="bodas" style="transform: translateY(45px); opacity: 0.4;">Bodas</p>
-                        <p data-slide="casamento" style="transform: translateY(0); opacity: 0.6;">Casamento</p>
-                        <p data-slide="camila" style="transform: translate(-15px,-68px);">Camila</p>
-                        <p data-slide="nath" style="transform: translateY(-10px); opacity: 0.6;">Nath<br>Lu
-                        <p style="transform: translateY(45px); opacity: 0.4;" data-slide="davi">Davi</p>
-                    </div>
-                </div>
-            </div>
+        <div class="capasmobile">
+            <img src="assets/nath.jpg" class="slidem on" alt="">
+            <img src="assets/davi.jpg" class="slidem off" alt="">
+            <img src="assets/bodas.jpg" class="slidem off" alt="">
+            <img src="assets/casamento.jpg" class="slidem off" alt="">
+            <img src="assets/camila.jpg" class="slidem off" alt="">
         </div>
     </div>
-
 
     <main>
         <div class="caixa">
             <div class="video">
                 <img src="assets/danilohero.jpg" alt="">
-
             </div>
             <div class="texto">
                 <h2
-                    style="font-weight: 300; font-size: 45px; margin-bottom: 60px; font-family: 'Destaque',sans-serif; text-align: left;">
+                    style="font-weight: 300; font-size: 45px; margin-bottom: 30px; font-family: 'Destaque',sans-serif; text-align: center;">
                     Danilo Lima</h2>
                 <p>Sempre existiu em mim o desejo de levar a <br> fotografia para um lado mais cinematográfico. <br> Não
                     no
@@ -302,10 +210,11 @@
                         nós, <br>
                         captando emoções genuínas e gestos sutis <br> que traduzem exatamente o que vivemos. Ao ver as
                         <br>
-                        fotografias, foi como reviver cada instante com a mesma intensidade. <br>
+                        fotografias, foi como reviver <br> cada instante com a mesma intensidade. <br>
                         Seu trabalho vai além do registro: as imagens contam a <br> nossa história com verdade,
                         delicadeza e
-                        significado <br> um resultado que permanecerá como memória por <br> toda a vida.</p>
+                        significado <br> um resultado que permanecerá como memória por <br> toda a vida.
+                    </p>
                 </div>
             </div>
             <div class="apre">
@@ -322,8 +231,8 @@
                         autênticas e cheias <br> de identidade. O ensaio refletiu exatamente quem eu sou, <br> sem
                         excessos ou
                         poses artificiais. <br>
-                        O resultado final superou expectativas, não apenas pela qualidade técnica, mas pela forma como
-                        as fotos conseguem transmitir sentimento e personalidade.</p>
+                        O resultado final superou expectativas, <br> não apenas pela qualidade técnica, <br> mas pela forma como
+                        as fotos conseguem transmitir <br> sentimento e personalidade.</p>
                 </div>
             </div>
             <div class="apre">
@@ -331,12 +240,17 @@
                     <img src="assets/portfoliohero3.png" alt="">
                 </div>
                 <div>
-                    <p>No dia do nosso casamento, o Danilo foi muito mais <br> do que o fotógrafo. Ele soube ler o ambiente, <br>
-                        respeitar os momentos e estar presente sem <br> interferir. Em nenhum momento sentimos a câmera <br> como
+                    <p>No dia do nosso casamento, o Danilo foi muito mais <br> do que o fotógrafo. Ele soube ler o
+                        ambiente, <br>
+                        respeitar os momentos e estar presente sem <br> interferir. Em nenhum momento sentimos a câmera
+                        <br> como
                         algo que quebrasse o clima pelo contrário, <br> tudo fluiu com naturalidade.
-                        As fotos revelaram coisas que só percebemos <br> depois: olhares, risos, emoções silenciosas e <br>
-                        detalhes que passaram rápido demais no dia. Cada <br> imagem carrega a atmosfera real do casamento, <br>
-                        sem exageros ou encenações.</p>
+                        As fotos revelaram <br> coisas que só percebemos <br> depois: olhares, risos, emoções silenciosas e
+                        <br>
+                        detalhes que passaram rápido demais no dia. Cada <br> imagem carrega a atmosfera real do
+                        casamento, <br>
+                        sem exageros ou encenações.
+                    </p>
                 </div>
             </div>
         </section>

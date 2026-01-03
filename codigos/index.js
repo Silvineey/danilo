@@ -22,3 +22,25 @@ botoes.forEach((botao) => {
         });
     });
 });
+const submenu=document.querySelector(".submenu")
+const menu=document.getElementById("menu")
+menu.addEventListener("click",()=>{
+    console.log(submenu)
+    submenu.classList.toggle("off")
+    submenu.classList.toggle("on")
+})
+
+
+const capas = document.querySelectorAll(".slidem");
+let ativo = 0;
+setInterval(passar, 5000);
+function passar() {
+    capas[ativo].classList.remove("on");
+    capas[ativo].classList.add("off");
+    ativo=ativo+1
+    if(ativo==capas.length){
+        ativo=0
+    }
+    capas[ativo].classList.remove("off");
+    capas[ativo].classList.add("on");
+}

@@ -29,3 +29,17 @@ footer{
     color: black;
     font-size: 20px;
 }
+
+@media screen and (max-width:500px){
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        align-items: center;
+        gap: 25px;
+        padding: 15px;
+    }
+    .logofooter img{
+        width: 100px;
+    }
+}

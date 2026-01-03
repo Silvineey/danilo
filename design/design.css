@@ -1,28 +1,33 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     list-style: none;
     text-decoration: none;
 }
-body{
+
+body {
     width: 100%;
 }
-.body{
+
+.body {
     height: 100vh;
     position: relative;
 }
-.logo img{
+
+.logo img {
     cursor: pointer;
     width: 130px;
     height: auto;
 }
-.logo{
+
+.logo {
     margin-left: 100px;
     margin-top: 21px;
 }
-header{
-    font-family: "inter",sans-serif;
+
+.cabeca {
+    font-family: "inter", sans-serif;
     left: 0;
     top: 0;
     align-items: center;
@@ -33,6 +38,7 @@ header{
     justify-content: space-between;
     z-index: 999;
 }
+
 @font-face {
     font-family: "Destaque";
     src: url("../fonte/TBJMaltaMiniEdition-ExtLt-BF668d85fa62f0a.ttf") format("truetype");
@@ -40,37 +46,44 @@ header{
     font-style: normal;
 }
 
-.navbar li{
+.navbar li {
     transition: transform 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.navbar li:hover{
+
+.navbar li:hover {
     transform: scale(1.1);
 }
-.navbar li a{
+
+.navbar li a {
     font-size: 20px;
     color: white;
     font-weight: 600;
 }
-.navbar{
+
+.navbar {
     display: flex;
     gap: 30px;
     color: white;
 }
-.backgroundmain{
+
+.backgroundmain {
     position: absolute;
     width: 100%;
     height: 100vh;
 }
-.conteiner{
+
+.conteiner {
     position: relative
 }
-.capa{
+
+.capa {
     transition: background-image 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
     background: url("../assets/nath.jpg") no-repeat center / cover;
     height: 100vh;
     width: 100%;
 }
-.opcoes{
+
+.opcoes {
     position: absolute;
     top: 88%;
     left: 50%;
@@ -81,18 +94,20 @@ header{
     justify-content: center;
 }
 
-.opcoes img{
+.opcoes img {
     margin-left: 50px;
     margin-bottom: 50px;
 }
-.opcoes p{
+
+.opcoes p {
     transition: transform 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
     text-align: center;
-    font-family: "Destaque",sans-serif;
+    font-family: "Destaque", sans-serif;
     color: white;
     margin-bottom: 50px;
 }
-.slide{
+
+.slide {
     min-width: 300px;
     margin: 0 auto;
     gap: 300px;
@@ -101,23 +116,26 @@ header{
     display: flex;
     justify-content: center;
 }
-.opcoes p:hover{
+
+.opcoes p:hover {
     cursor: pointer;
 }
 
-.off{
+.off {
     opacity: 0;
     visibility: hidden;
     pointer-events: none;
     transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 }
-.on{
+
+.on {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
     transition: all 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.caixa{
+
+.caixa {
     padding-top: 100px;
     padding-bottom: 100px;
     background-color: white;
@@ -127,22 +145,25 @@ header{
     gap: 50px;
     width: 100%;
     height: auto;
-
 }
-.video img{
+
+.video img {
     width: 650px;
     height: auto;
     border-radius: 42px;
 }
-.texto p{
+
+.texto p {
     text-align: left;
     font-size: 22px;
 }
-main{
+
+main {
     background-color: #2E2E2E;
     padding-bottom: 300px;
 }
-section{
+
+section {
     color: white;
     gap: 50px;
     margin-top: 50px;
@@ -150,22 +171,133 @@ section{
     justify-content: center;
     flex-wrap: wrap;
 }
-.apre{
+
+.apre {
     font-family: "inter", sans-serif;
     gap: 10px;
     width: 500px;
-    min-width: 500px;
+    min-width: 100px;
     display: flex;
     flex-direction: column;
 }
-.borda{
+
+.borda {
     display: flex;
 }
-.borda img{
-    min-width: 300px;
+
+.borda img {
+    min-width: 150px;
     width: 600px;
     height: auto;
 }
-.apre p{
+
+.apre p {
     text-align: center;
+}
+
+.bodymobile {
+    display: none;
+}
+
+@media screen and (max-width:500px) {
+    body {
+        overflow-x: none;
+    }
+
+    .body {
+        display: none;
+    }
+
+    .bodymobile {
+        width: 100%;
+        max-height: 334.63px;
+        height: 100vh;
+        display: block;
+        position: relative;
+    }
+
+    .submenu a {
+        color: white;
+    }
+
+    .cabecamobile {
+        padding: 20px 20px;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        z-index: 999;
+    }
+
+    .capasmobile img {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    .logomobile img {
+        width: 100px;
+    }
+
+    .capasmobile img {
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+    }
+
+    .caixa {
+        border: none;
+        border-radius: 0;
+        padding: 0;
+        flex-direction: column;
+        margin: 0;
+        align-items: center;
+    }
+
+    .video img {
+        width: 300px;
+    }
+
+    .texto h2 {
+        text-align: center;
+    }
+
+    .texto p {
+        padding-bottom: 30px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .borda img {
+        width: 250px;
+    }
+
+    .apre {
+        align-items: center;
+    }
+
+    .borda {
+        justify-content: center;
+        width: 300px;
+        min-width: 300px;
+    }
+
+    .apre p {
+        font-size: 13px;
+    }
+
+    main {
+        padding-bottom: 100px;
+    }
+
+    .slidem.off {
+        opacity: 0;
+        visibility: hidden;
+    }
+
+    .slidem.on {
+        z-index: 5;
+        opacity: 1;
+        visibility: visible;
+    }
 }

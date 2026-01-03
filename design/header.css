@@ -15,6 +15,7 @@ a{
     color: white;
 }
 body{
+    width: 100%;
     font-family: "inter",sans-serif;
     overflow-x: hidden;
     background-color: black;
@@ -49,4 +50,40 @@ header{
 .logo{
     margin-left: 100px;
     margin-top: 21px;
+}
+.mobile{
+    display: none;
+}
+@media screen and (max-width:500px){
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: flex;
+    }
+    .logomobile img{
+        width: 110px;
+    }
+
+    #menu{
+        position: relative;
+    }
+    .submenu{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .off{
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+        transition: all 0.5s ease;
+    }
+    .on{
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+        transition: all 0.5s ease;
+    }
 }
