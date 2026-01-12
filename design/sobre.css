@@ -1,64 +1,85 @@
-main{
+main {
+    background-color: #2e2e2e;
+    overflow-x: hidden;
+}
+
+.principal {
+    text-align: center;
+    color: white;
+    padding: 60px 20px;
+}
+
+.principal h2 {
+    font-size: 3rem;
+    font-family: "Destaque", sans-serif;
+    padding-bottom: 20px;
+}
+
+.principal p {
+    font-size: 1.1rem;
+    font-family: "inter", sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.backhand, .sobreface {
+    width: 100%;
+    background-repeat: no-repeat;
     background-color: #2e2e2e;
 }
 
-.principal{
-    text-align: center;
-    color: white;
-    padding: 60px;
-}
-.principal h2{
-    font-size: 66px;
-    font-family: "Destaque",sans-serif;
-    padding-bottom: 40px;
-}
-.principal p{
-    font-size: 22px;
-    font-family: "inter",sans-serif;
-    font-weight: 400;
-}
-.backhand{
-    min-width: 300px;
-    width: 100%;
-    min-height: 773px;
-    background-repeat: no-repeat;
+.backhand {
+    min-height: 300px;
     background-image: url("../assets/sobrehand.jpg");
+    background-size: contain;
+    background-position: center;
 }
 
-.backhand{
-    display: flex;
-    justify-content: right;
-    padding: 2.5rem;
-    min-width: 300px;
-    width: 100%;
-    height: auto;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("../assets/sobrehand.jpg");
+.sobreface {
+    min-height: 400px;
+    background-image: url("../assets/sobreface.jpg");
+    background-size: contain;
+    background-position: 80% center;
 }
 
-.sobreface{
-    background: url("../assets/sobreface.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: auto;
-    min-height: 674px;
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    perspective: 500px;
-    transform-style: preserve-3d;
-    padding-left: 125px;
-}
-.texto{
-    font-family: "inter",sans-serif;
+.texto {
+    font-family: "inter", sans-serif;
     color: white;
-    display: flex;
     text-align: center;
-    padding: 3rem;
-    font-size: 28px;
-    font-weight: 400;
+    padding: 40px 20px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    display: flex;
     justify-content: center;
+}
+
+.texto p {
+    max-width: 800px;
+}
+
+@media (min-width: 768px) {
+    .principal h2 {
+        font-size: 66px;
+    }
+
+    .principal p {
+        font-size: 22px;
+    }
+
+    .backhand {
+        min-height: 773px;
+        background-size: cover;
+    }
+
+    .sobreface {
+        min-height: 674px;
+        background-size: cover;
+        background-position: center left;
+        padding-left: 125px;
+    }
+
+    .texto {
+        font-size: 28px;
+        padding: 3rem;
+    }
 }
